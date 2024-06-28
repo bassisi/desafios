@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "challenge-de"
+version = "0.1.0"
+description = "Requerimientos para challenge_de LATAM 6/24"
+authors = ["Renato Bassi <renato.bassi@sansano.usm.cl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+ipykernel = "^6.29.4"
+seaborn = "^0.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
