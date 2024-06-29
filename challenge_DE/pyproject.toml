@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "challenge-de"
-version = "0.3.0"
+version = "0.3.1"
 description = "Requerimientos para challenge_de LATAM 6/24"
 authors = ["Renato Bassi <renato.bassi@sansano.usm.cl>"]
 readme = "README.md"
