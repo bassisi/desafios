@@ -32,7 +32,6 @@ Este proyecto analiza un conjunto de datos de tweets para identificar patrones y
     ```sh
     jupyter notebook challenge.ipynb
     ```
-
 2. Ejecuta las celdas en el notebook para realizar el análisis de datos.
 
 ### Ejecución de Funciones
@@ -47,6 +46,10 @@ from q3_memory import q3_memory
 from q3_time import q3_time
 
 # Ejemplo de uso
-result = q1_memory('dirección/de/tu/archivo/json')
+result = q1_memory('ruta/a/tu/archivo/json')
 print(result)
+```
+<!-- CONTACT -->
+## Contacto
 
+Renato Bassi - [@RenaBassi](https://twitter.com/RenaBassi) - renato.bassi@sansano.usm.cl
