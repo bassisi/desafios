@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "challenge-de"
-version = "0.2.2"
+version = "0.3.0"
 description = "Requerimientos para challenge_de LATAM 6/24"
 authors = ["Renato Bassi <renato.bassi@sansano.usm.cl>"]
 readme = "README.md"
@@ -11,6 +11,7 @@ pandas = "^2.2.2"
 ipykernel = "^6.29.4"
 seaborn = "^0.13.2"
 memory-profiler = "^0.61.0"
+emoji = "^2.12.1"
 
 
 [build-system]
