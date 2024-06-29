@@ -49,6 +49,11 @@ from q3_time import q3_time
 result = q1_memory('ruta/a/tu/archivo/json')
 print(result)
 ```
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
 <!-- CONTACT -->
 ## Contacto
 
