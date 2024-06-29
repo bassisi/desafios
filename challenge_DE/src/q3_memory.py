@@ -17,9 +17,9 @@ def q3_memory(file_path: str) -> List[Tuple[str, int]]:
 
     # Procesar archivo en trozos
     for chunk in pd.read_json(file_path, lines=True, chunksize=chunk_size):
-        content = chunk['content'].astype(str)  # Seteando el contenido para que sea de tipo cadena
+        content = chunk['content'].astype(str)  # Seteando el contenido para que sea de tipo string
         for text in content:
             mentions = extract_mentions(text)  # Extracción de menciones del contenido
-            mention_counter.update(mentions)  # Actualización del contador con menciones extraídas.
+            mention_counter.update(mentions)  # Actualización del contador con menciones extraídas
 
     return mention_counter.most_common(10)  # Devolución de las 10 menciones más comunes con sus recuentos
