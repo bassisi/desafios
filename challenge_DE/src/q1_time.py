@@ -9,7 +9,7 @@ def q1_time(file_path: str) -> List[Tuple[datetime.date, str]]:
     # Convertir la columna "date" a fecha sin tiempo
     df["date"] = pd.to_datetime(df["date"]).dt.date
     
-    # Convertir la columna "user" a cadena de texto para evitar el error
+    # Extraer el valor de la clave "username" en la columna "user"  
     df["username"] = df["user"].apply(lambda x: x["username"] if isinstance(x, dict) else None)
     
     # Contar tweets por fecha y usuario
