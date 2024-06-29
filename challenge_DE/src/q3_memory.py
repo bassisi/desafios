@@ -7,9 +7,27 @@ from collections import Counter
 mention_pattern = re.compile(r'@\w+')
 
 def extract_mentions(text):
+    """
+    Extrae todas las menciones (palabras que comienzan con @) del texto dado.
+    
+    Parámetros:
+    text (str): El texto de entrada del que se deben extraer las menciones.
+    
+    Retorna:
+    list: Una lista de menciones encontradas en el texto.
+    """
     return mention_pattern.findall(text)
 
 def q3_memory(file_path: str) -> List[Tuple[str, int]]:
+    """
+    Identifica los 10 usuarios más mencionados en un conjunto de datos de Twitter, optimizando para el uso de memoria.
+    
+    Parámetros:
+    file_path (str): La ruta al archivo JSON que contiene los datos de los tweets.
+    
+    Retorna:
+    list: Una lista de tuplas donde cada tupla contiene un nombre de usuario y la cuenta de menciones.
+    """
     # Tamaño de fragmento más pequeño para un menor uso de memoria
     chunk_size = 10000 
     # Contador de frecuencias de mención

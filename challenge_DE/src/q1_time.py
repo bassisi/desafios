@@ -3,6 +3,15 @@ from datetime import datetime
 import pandas as pd
 
 def q1_time(file_path: str) -> List[Tuple[datetime.date, str]]:
+    """
+    Identifica las 10 fechas con más tweets y el usuario más activo en cada una de esas fechas, optimizando para el tiempo de ejecución.
+
+    Parámetros:
+    file_path (str): La ruta al archivo JSON que contiene los datos de los tweets.
+
+    Retorna:
+    List[Tuple[datetime.date, str]]: Una lista de tuplas donde cada tupla contiene una fecha y el nombre del usuario más activo en esa fecha.
+    """
     # Leer el archivo completo en memoria
     df = pd.read_json(file_path, lines=True)
     
